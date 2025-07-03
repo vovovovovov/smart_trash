@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.dbclient-js": "javascript",
+        "headfile.h": "c",
+        "ultra_sound.h": "c",
+        "tim.h": "c",
+        "schedule.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
