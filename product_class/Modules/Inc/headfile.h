@@ -3,6 +3,7 @@
 
 #include "ultra_sound.h"
 #include "schedule.h"
+#include "beep.h"
 
 #include "gpio.h"
 #include "tim.h"

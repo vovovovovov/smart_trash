@@ -106,8 +106,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+		beep_off();
 		
-		Get_distance();
+//		Get_distance();
 		
 		
   }

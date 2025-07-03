@@ -21,6 +21,7 @@
 "product_class\system_stm32f1xx.o"
 "product_class\schedule.o"
 "product_class\ultra_sound.o"
+"product_class\beep.o"
 --strict --scatter "product_class\product_class.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
