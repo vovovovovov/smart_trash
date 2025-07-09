@@ -1,0 +1,62 @@
+#include "headfile.h"
+
+void TB6612_SET(GPIO_TypeDef* GPIOx,uint16_t GPIO_PIN,GPIO_PinState PinState)
+{
+	HAL_GPIO_WritePin(GPIOx,GPIO_PIN,PinState);
+}
+
+void TB6612_SET_DIRECTION(GPIO_TypeDef* GPIOx,uint16_t TB6612_State)
+{
+	if(GPIOx == TB6612_PORT_A)
+	{
+		switch(TB6612_State)
+		{
+			case TB6612_STOP:
+				TB6612_SET(TB6612_PORT_A,TB6612_PORT_A_IN_1,TB6612_OVER);
+				TB6612_SET(TB6612_PORT_A,TB6612_PORT_A_IN_2,TB6612_OVER);
+				break;
+			case TB6612_UP:
+				TB6612_SET(TB6612_PORT_A,TB6612_PORT_A_IN_1,TB6612_OVER);
+				TB6612_SET(TB6612_PORT_A,TB6612_PORT_A_IN_2,TB6612_WORK);
+				break;
+			case TB6612_DOWN:
+				TB6612_SET(TB6612_PORT_A,TB6612_PORT_A_IN_1,TB6612_WORK);
+				TB6612_SET(TB6612_PORT_A,TB6612_PORT_A_IN_2,TB6612_OVER);
+				break;
+		}
+	}
+	if(GPIOx == TB6612_PORT_B)
+	{
+		switch(TB6612_State)
+		{
+			case TB6612_STOP:
+				TB6612_SET(TB6612_PORT_B,TB6612_PORT_B_IN_1,TB6612_OVER);
+				TB6612_SET(TB6612_PORT_B,TB6612_PORT_B_IN_2,TB6612_OVER);
+				break;
+			case TB6612_UP:
+				TB6612_SET(TB6612_PORT_B,TB6612_PORT_B_IN_1,TB6612_OVER);
+				TB6612_SET(TB6612_PORT_B,TB6612_PORT_B_IN_2,TB6612_WORK);
+				break;
+			case TB6612_DOWN:
+				TB6612_SET(TB6612_PORT_B,TB6612_PORT_B_IN_1,TB6612_WORK);
+				TB6612_SET(TB6612_PORT_B,TB6612_PORT_B_IN_2,TB6612_OVER);
+				break;
+		}
+	}
+}
+
+void TB6612_SET_START(TIM_HandleTypeDef *htim, uint32_t Channel)
+{
+	HAL_TIM_PWM_Start(htim, Channel);
+}
+
+void TB6612_SET_SPEED(TIM_HandleTypeDef *htim, uint32_t Channel , uint16_t degree)
+{
+	__HAL_TIM_SetCompare(htim,Channel,(uint16_t)(((float)degree/100)*TB6612_TIM_COUNTER_PERIOD));
+}
+	
+
+
+
+
+

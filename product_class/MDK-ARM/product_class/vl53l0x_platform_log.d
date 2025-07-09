@@ -1,0 +1,11 @@
+product_class\vl53l0x_platform_log.o: ..\VL53L0X\platform\src\vl53l0x_platform_log.c
+product_class\vl53l0x_platform_log.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+product_class\vl53l0x_platform_log.o: ..\VL53L0X\platform\inc\vl53l0x_i2c_platform.h
+product_class\vl53l0x_platform_log.o: ..\VL53L0X\core\inc\vl53l0x_def.h
+product_class\vl53l0x_platform_log.o: ..\VL53L0X\core\inc\vl53l0x_device.h
+product_class\vl53l0x_platform_log.o: ..\VL53L0X\platform\inc\vl53l0x_types.h
+product_class\vl53l0x_platform_log.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+product_class\vl53l0x_platform_log.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+product_class\vl53l0x_platform_log.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+product_class\vl53l0x_platform_log.o: ..\VL53L0X\platform\inc\vl53l0x_platform_log.h
+product_class\vl53l0x_platform_log.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

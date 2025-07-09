@@ -31,5 +31,7 @@ product_class\beep.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 product_class\beep.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 product_class\beep.o: ../Modules/Inc/schedule.h
 product_class\beep.o: ../Modules/Inc/beep.h
-product_class\beep.o: ../Core/Inc/gpio.h
+product_class\beep.o: ../Modules/Inc/SG90.h
 product_class\beep.o: ../Core/Inc/tim.h
+product_class\beep.o: ../Modules/Inc/TB6612.h
+product_class\beep.o: ../Core/Inc/gpio.h

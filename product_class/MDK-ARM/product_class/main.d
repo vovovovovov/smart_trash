@@ -33,3 +33,5 @@ product_class\main.o: ../Modules/Inc/headfile.h
 product_class\main.o: ../Modules/Inc/ultra_sound.h
 product_class\main.o: ../Modules/Inc/schedule.h
 product_class\main.o: ../Modules/Inc/beep.h
+product_class\main.o: ../Modules/Inc/SG90.h
+product_class\main.o: ../Modules/Inc/TB6612.h

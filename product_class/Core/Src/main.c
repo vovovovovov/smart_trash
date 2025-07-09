@@ -90,6 +90,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_TIM2_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 	
 //	HAL_TIM_Base_Start_IT(&htim2);   // 定时器中断初始化，用于轮询(测试版，现在单位改了)
@@ -97,6 +98,9 @@ int main(void)
 //	HAL_TIM_IC_Start(&htim2,TIM_CHANNEL_2);
 //	HAL_TIM_IC_Start_IT(&htim2, TIM_CHANNEL_2);  // 通道二输入捕获，用于超声波
 
+//	HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_1);
+	SG90_PWM_START(&SG90_TIM,SG90_TIM_CHANNEL);
+	uint16_t rere=0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -106,7 +110,23 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		beep_off();
+//		beep_off();
+		while(rere<180)
+		{
+			rere++;
+//			__HAL_TIM_SetCompare(&htim3,TIM_CHANNEL_1,rere);
+			SG90_PWM_CONTROL(&SG90_TIM,SG90_TIM_CHANNEL ,  rere);
+//			__HAL_TIM_SetCompare(&SG90_TIM,SG90_TIM_CHANNEL ,  (uint16_t)(((float)rere/1800.0 +0.025)*SG90_TIM_COUNTER_PERIOD));
+			HAL_Delay(10);
+		}
+		while(rere)
+		{
+			rere--;
+//			__HAL_TIM_SetCompare(&htim3,TIM_CHANNEL_1,rere);
+			SG90_PWM_CONTROL(&SG90_TIM,SG90_TIM_CHANNEL ,  rere);
+			HAL_Delay(10);
+		}
+		
 		
 //		Get_distance();
 		

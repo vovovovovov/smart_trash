@@ -10,7 +10,7 @@
       <TargetName>product_class</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
+      <pCCUsed>5060528::V5.06 update 5 (build 528)::.\ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Modules/Inc</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Modules/Inc;..\VL53L0X\core\inc;..\VL53L0X\platform\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -570,6 +570,66 @@
               <FileType>1</FileType>
               <FilePath>..\Modules\Src\beep.c</FilePath>
             </File>
+            <File>
+              <FileName>SG90.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Modules\Src\SG90.c</FilePath>
+            </File>
+            <File>
+              <FileName>TB6612.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Modules\Src\TB6612.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>VL53L0X</GroupName>
+          <Files>
+            <File>
+              <FileName>vl53l0x_api.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VL53L0X\core\src\vl53l0x_api.c</FilePath>
+            </File>
+            <File>
+              <FileName>vl53l0x_api_calibration.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VL53L0X\core\src\vl53l0x_api_calibration.c</FilePath>
+            </File>
+            <File>
+              <FileName>vl53l0x_api_core.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VL53L0X\core\src\vl53l0x_api_core.c</FilePath>
+            </File>
+            <File>
+              <FileName>vl53l0x_api_ranging.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VL53L0X\core\src\vl53l0x_api_ranging.c</FilePath>
+            </File>
+            <File>
+              <FileName>vl53l0x_api_strings.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VL53L0X\core\src\vl53l0x_api_strings.c</FilePath>
+            </File>
+            <File>
+              <FileName>vl53l0x_i2c_platform.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VL53L0X\platform\src\vl53l0x_i2c_platform.c</FilePath>
+            </File>
+            <File>
+              <FileName>vl53l0x_i2c_win_serial_comms.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VL53L0X\platform\src\vl53l0x_i2c_win_serial_comms.c</FilePath>
+            </File>
+            <File>
+              <FileName>vl53l0x_platform.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VL53L0X\platform\src\vl53l0x_platform.c</FilePath>
+            </File>
+            <File>
+              <FileName>vl53l0x_platform_log.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VL53L0X\platform\src\vl53l0x_platform_log.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -591,5 +651,14 @@
     </components>
     <files/>
   </RTE>
+
+  <LayerInfo>
+    <Layers>
+      <Layer>
+        <LayName>product_class</LayName>
+        <LayPrjMark>1</LayPrjMark>
+      </Layer>
+    </Layers>
+  </LayerInfo>
 
 </Project>
