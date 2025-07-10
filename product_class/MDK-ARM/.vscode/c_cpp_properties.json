@@ -3,18 +3,20 @@
         {
             "name": "product_class",
             "includePath": [
-                "d:\\BaiduNetdiskDownload\\product_class\\product_class\\Core\\Inc",
-                "d:\\BaiduNetdiskDownload\\product_class\\product_class\\Drivers\\STM32F1xx_HAL_Driver\\Inc",
-                "d:\\BaiduNetdiskDownload\\product_class\\product_class\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy",
-                "d:\\BaiduNetdiskDownload\\product_class\\product_class\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include",
-                "d:\\BaiduNetdiskDownload\\product_class\\product_class\\Drivers\\CMSIS\\Include",
-                "d:\\BaiduNetdiskDownload\\product_class\\product_class\\Modules\\Inc",
+                "c:\\Users\\23941\\Desktop\\product_class\\product_class\\product_class\\Core\\Inc",
+                "c:\\Users\\23941\\Desktop\\product_class\\product_class\\product_class\\Drivers\\STM32F1xx_HAL_Driver\\Inc",
+                "c:\\Users\\23941\\Desktop\\product_class\\product_class\\product_class\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy",
+                "c:\\Users\\23941\\Desktop\\product_class\\product_class\\product_class\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include",
+                "c:\\Users\\23941\\Desktop\\product_class\\product_class\\product_class\\Drivers\\CMSIS\\Include",
+                "c:\\Users\\23941\\Desktop\\product_class\\product_class\\product_class\\Modules\\Inc",
+                "c:\\Users\\23941\\Desktop\\product_class\\product_class\\product_class\\VL53L0X\\core\\inc",
+                "c:\\Users\\23941\\Desktop\\product_class\\product_class\\product_class\\VL53L0X\\platform\\inc",
                 "D:\\keil_v5\\ARM\\ARMCC\\include",
                 "D:\\keil_v5\\ARM\\ARMCC\\include\\rw",
-                "d:\\BaiduNetdiskDownload\\product_class\\product_class\\MDK-ARM",
-                "d:\\BaiduNetdiskDownload\\product_class\\product_class\\Core\\Src",
-                "d:\\BaiduNetdiskDownload\\product_class\\product_class\\Drivers\\STM32F1xx_HAL_Driver\\Src",
-                "d:\\BaiduNetdiskDownload\\product_class\\product_class\\Modules\\Src"
+                "c:\\Users\\23941\\Desktop\\product_class\\product_class\\product_class\\MDK-ARM",
+                "c:\\Users\\23941\\Desktop\\product_class\\product_class\\product_class\\Core\\Src",
+                "c:\\Users\\23941\\Desktop\\product_class\\product_class\\product_class\\Drivers\\STM32F1xx_HAL_Driver\\Src",
+                "c:\\Users\\23941\\Desktop\\product_class\\product_class\\product_class\\Modules\\Src"
             ],
             "defines": [
                 "USE_HAL_DRIVER",

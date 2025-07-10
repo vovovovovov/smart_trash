@@ -13,8 +13,5 @@ void SG90_PWM_START(TIM_HandleTypeDef *htim, uint32_t Channel);
 void SG90_PWM_CONTROL(TIM_HandleTypeDef *htim, uint32_t Channel , uint16_t dushu);
 
 
-//void beep_on(void);
-//void beep_off(void);
-
 
 #endif

@@ -46,7 +46,13 @@ extern "C" {
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
+extern unsigned char RX_USART_1[64];
+extern uint16_t RX_USART_1_LEN;
+extern uint16_t RX_FLAG;
 
+
+extern uint8_t  myUsbRxData[64];   // 接收到的数据
+extern uint16_t myUsbRxNum ;
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/
